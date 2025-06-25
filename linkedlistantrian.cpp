@@ -56,4 +56,12 @@ void hitungPasien() {
 
     cout << "Jumlah pasien dalam antrian: " << jumlah << endl;
 }
+void hapusSemua() {
+    while (head != nullptr) {
+        Pasien* hapus = head;
+        head = head->next;
+        delete hapus;
+    }
+    cout << "Semua antrian telah dihapus.\n";
+}
 
