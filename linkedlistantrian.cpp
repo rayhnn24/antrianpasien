@@ -6,3 +6,4 @@ struct Pasien {
     Pasien* next;
     Pasien* head = nullptr;
 };
+void tambahPasien(string nama) {
