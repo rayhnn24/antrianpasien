@@ -45,3 +45,15 @@ void panggilPasien() {
     head = head->next;
     delete dipanggil;
 }
+void hitungPasien() {
+    int jumlah = 0;
+    Pasien* temp = head;
+
+    while (temp != nullptr) {
+        jumlah++;
+        temp = temp->next;
+    }
+
+    cout << "Jumlah pasien dalam antrian: " << jumlah << endl;
+}
+
