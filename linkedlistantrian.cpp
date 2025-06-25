@@ -35,3 +35,13 @@ void tampilkanAntrian() {
         temp = temp->next;
     }
 }
+void panggilPasien() {
+    if (head == nullptr) {
+        cout << "Tidak ada pasien untuk dipanggil.\n";
+        return;
+    }
+    Pasien* dipanggil = head;
+    cout << "Memanggil pasien: " << dipanggil->nama << endl;
+    head = head->next;
+    delete dipanggil;
+}
